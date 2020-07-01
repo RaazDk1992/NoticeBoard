@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/whilte_color"
+    android:id="@+id/xyz">
+
+
+    <LinearLayout
+        android:id="@+id/app_Header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/app_header_bg"
+        >
+        <ImageView
+            android:layout_width="100px"
+            android:layout_height="100px"
+            android:src="@drawable/logo"/>
+
+        <TextView
+            android:id="@+id/Header"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/kalimati"
+            android:textSize="20sp"
+            android:background="@color/app_header_bg"
+            android:textColor="@color/whilte_color"
+            android:text="@string/header_name"
+            android:gravity="center"/>
+
+
+    </LinearLayout>
+    <LinearLayout
+
+        android:layout_below="@id/app_Header"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp">
+        <ViewFlipper
+
+            android:id="@+id/chart_container"
+            android:layout_width="0dp"
+            android:layout_height="500dp"
+            android:layout_weight="0.85"
+            android:inAnimation="@anim/fade_in"
+            android:outAnimation="@anim/fade_out"
+            >
+
+        </ViewFlipper>
+       <LinearLayout
+
+           android:layout_width="0dp"
+           android:layout_weight="0.15"
+           android:orientation="vertical"
+           android:layout_height="match_parent"
+           android:layout_marginLeft="2dp"
+           android:layout_marginRight="2dp"
+           >
+           <RelativeLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content">
+               <ImageView
+                   android:id="@+id/mayor_img"
+                   android:layout_alignParentTop="true"
+                   android:layout_width="@dimen/static_image_width_standard"
+                   android:layout_height="@dimen/static_image_width_standard"
+                   android:layout_gravity="center"
+                   android:adjustViewBounds="true"
+                   android:scaleType="fitXY"
+                   android:src="@drawable/mayor"/>
+               <TextView
+                   android:layout_below="@id/mayor_img"
+                   android:id="@+id/caption_mayor"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="@string/caption_mayor"
+                   android:textColor="@color/app_header_bg"
+                   android:textSize="8sp"/>
+               <ImageView
+                   android:layout_alignParentRight="true"
+                   android:layout_toLeftOf="@id/mayor_img"
+                   android:id="@+id/deputy_mayor"
+                   android:layout_marginStart="@dimen/image_gap"
+                   android:layout_marginLeft="@dimen/image_gap"
+                   android:layout_alignParentTop="true"
+                   android:layout_width="@dimen/static_image_width_standard"
+                   android:layout_height="@dimen/static_image_width_standard"
+                   android:layout_gravity="center"
+                   android:adjustViewBounds="true"
+                   android:scaleType="fitXY"
+                   android:src="@drawable/deputy_mayor"/>
+               <TextView
+                   android:layout_below="@id/deputy_mayor"
+                   android:layout_alignParentRight="true"
+                   android:id="@+id/caption_deputy_mayor"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="@string/caption_deputy_mayor"
+                   android:textColor="@color/app_header_bg"
+                   android:textSize="8sp"/>
+               <ImageView
+                   android:id="@+id/chief_administrator"
+                   android:layout_below="@id/mayor_img"
+                   android:layout_marginTop="@dimen/gap_large"
+                   android:layout_width="@dimen/static_image_width_standard"
+                   android:layout_height="@dimen/static_image_width_standard"
+                   android:layout_gravity="center"
+                   android:adjustViewBounds="true"
+                   android:scaleType="fitXY"
+                   android:src="@drawable/chief"/>
+               <TextView
+                   android:layout_marginTop="@dimen/image_gap"
+                   android:layout_below="@id/chief_administrator"
+                   android:id="@+id/chief_administrator_caption"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="@string/caption_cheif"
+                   android:textColor="@color/app_header_bg"
+                   android:textSize="8sp"/>
+               <ImageView
+                   android:id="@+id/info_rep"
+                   android:layout_alignParentRight="true"
+                   android:layout_below="@id/caption_deputy_mayor"
+                   android:layout_width="@dimen/static_image_width_standard"
+                   android:layout_height="@dimen/static_image_width_standard"
+                   android:layout_gravity="center"
+                   android:adjustViewBounds="true"
+                   android:scaleType="fitXY"
+                   android:src="@drawable/info_offi"/>
+               <TextView
+                   android:layout_marginStart="@dimen/image_gap"
+                   android:layout_marginTop="@dimen/image_gap"
+                   android:layout_below="@id/info_rep"
+                   android:id="@+id/info_official_caption"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="@string/caption_info_refpresentative"
+                   android:textColor="@color/app_header_bg"
+                   android:layout_alignParentRight="true"
+                   android:textSize="8sp"/>
+           </RelativeLayout>
+
+           <ViewFlipper
+               android:id="@+id/elected_candidates"
+               android:layout_below="@id/app_Header"
+               android:layout_toLeftOf="@id/chart_container"
+               android:layout_alignParentRight="true"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:inAnimation="@anim/bounce"
+
+               ></ViewFlipper>
+           <!--
+           <ViewFlipper
+               android:id="@+id/office_staffs"
+               android:layout_below="@id/app_Header"
+               android:layout_toLeftOf="@id/chart_container"
+               android:layout_alignParentRight="true"
+               android:layout_width="match_parent"
+               android:layout_height="0dp"
+               android:layout_weight="0.4"
+               ></ViewFlipper> !-->
+
+
+
+       </LinearLayout>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/txtTicker"
+        android:layout_alignParentBottom="true"
+        android:background="@color/color_red"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:ellipsize="marquee"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:freezesText="true"
+        android:gravity="center_horizontal"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:paddingLeft="5dip"
+        android:paddingRight="5dip"
+        android:scrollHorizontally="true"
+        android:singleLine="true"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:text="@string/ticker_text">
+    </TextView>
+</RelativeLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="cell_max_width">200dp</dimen>
+    <dimen name="cell_min_width">100dp</dimen>
+    <dimen name="image_width_standard">300dp</dimen>
+    <dimen name="image_height_standard">150dp</dimen>
+    <dimen name="header_height">30dp</dimen>
+    <dimen name="static_image_width_standard">100dp</dimen>
+    <dimen name="static_image_height_standard">120dp</dimen>
+    <dimen name="image_gap">1dp</dimen>
+    <dimen name="gap_large">20dp</dimen>
+</resources>

@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">Noticeboard</string>
+    <string name="browse_title"><![CDATA[Videos by Your Company]]></string>
+    <string name="related_movies">Related Videos</string>
+    <string name="grid_view">Grid View</string>
+    <string name="error_fragment">Error Fragment</string>
+    <string name="personal_settings">Personal Settings</string>
+    <string name="watch_trailer_1">Watch trailer</string>
+    <string name="watch_trailer_2">FREE</string>
+    <string name="rent_1">Rent By Day</string>
+    <string name="rent_2">From $1.99</string>
+    <string name="buy_1">Buy and Own</string>
+    <string name="buy_2">AT $9.99</string>
+    <string name="movie">Movie</string>
+
+    <!-- Error messages -->
+    <string name="error_fragment_message">An error occurred</string>
+    <string name="dismiss_error">Dismiss</string>
+    <!--    Custom informations bere   !-->
+
+    <string name="header_name">लेकवेशी नगरपालिका \n नगरकार्यपालिका को कार्यालय \n कर्णाली प्रदेश नेपाल \n नागरिक वडापत्र      </string>
+    <string name="sn">क्र.स </string>
+    <string name="service_name">सेवा </string>
+    <string name="service_fare">शुल्क </string>
+    <string name="res_person"> सम्बन्धित  कर्मचारी </string>
+    <string name="req_time">समय </string>
+    <string name="req_doc">आवश्यक कागजात  </string>
+    <string name="process">प्रक्रिया </string>
+    <string name="res_dept">सम्बन्धित कार्यालय </string>
+    <string name="progress_title">सर्भर मा कनेक्ट गरिदै छ। </string>
+    <string name="progress_message">कृपया प्रतिक्षा गर्नुहोस। </string>
+    <string name="ticker_text">          विस्तृत जानकारी का लागि  हाम्रो  फेसबुक पेज Lekbeshi Municipality लाइ लाइक गर्नु होला  XX  Playstore बाट  हाम्रो मोबाइल  Application डाउनलोड  गरि सम्पूर्ण जानकारी हातमै  पाउन सक्नु हुनेछ  XX                   </string>
+    <string name="importatn_numbers">महत्वपुर्ण सम्पर्क नम्बर </string>
+    <string name="caption_mayor">गगन सिं  सुनार \n नगर प्रमुख</string>
+    <string name="caption_deputy_mayor">शान्तीकुमारी छन्तेल \n नगर उप प्रमुख </string>
+    <string name="caption_cheif">कृष्णप्रसाद खरेल \n प्रमुख प्रशासकीय अधिकृत </string>
+    <string name="caption_info_refpresentative">केशर बहादुर डाँगी\n सूचना अधिकारी </string>
+
+</resources>
